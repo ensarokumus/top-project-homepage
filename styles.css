@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;300&display=swap");
-/* font-family: 'Playfair Display', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;300;400&display=swap");
 
 *,
 *::before,
@@ -15,7 +14,10 @@
 
 body {
   min-height: 100svh;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 }
 
 img,
@@ -31,7 +33,7 @@ video {
 }
 
 .contact-links img {
-  width: 2.5rem;
+  width: 3rem;
 }
 
 .project-icons {
@@ -40,4 +42,51 @@ video {
 
 .project-icons img {
   width: 1.75rem;
+}
+
+/* HEADER */
+
+.header-image {
+  position: relative;
+  margin: 2rem 3rem;
+}
+
+.header-image h1 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 6rem;
+  line-height: 0.9;
+  text-align: center;
+}
+
+.about-me {
+  margin: 3.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.about-me p {
+  font-size: 2rem;
+  color: #565656;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.contact-links {
+  display: flex;
+  gap: 2rem;
+  align-self: center;
+}
+
+.twitter {
+  filter: brightness(0);
 }
