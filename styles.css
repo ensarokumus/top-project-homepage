@@ -28,22 +28,6 @@ video {
   max-width: 100%;
 }
 
-.contact-links {
-  display: flex;
-}
-
-.contact-links img {
-  width: 3rem;
-}
-
-.project-icons {
-  display: flex;
-}
-
-.project-icons img {
-  width: 1.75rem;
-}
-
 /* HEADER */
 
 .header-image {
@@ -87,6 +71,67 @@ h2 {
   align-self: center;
 }
 
+.contact-links img {
+  width: 3rem;
+}
+
 .twitter {
   filter: brightness(0);
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.project-card {
+  margin: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #565656;
+}
+
+.project-card > img {
+  height: 350px;
+  width: 600px;
+  object-fit: cover;
+}
+
+.project-details {
+ margin: 1rem 2rem 6rem;
+ display: flex;
+ flex-direction: column;
+ gap: 2rem;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin-left: 1rem;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-icons img {
+  width: 2rem;
 }
