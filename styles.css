@@ -30,6 +30,14 @@ video {
 
 /* HEADER */
 
+.slanted-bg {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  background-color: rgb(253, 211, 144);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+}
+
 .header-image {
   position: relative;
   margin: 2rem 3rem;
@@ -54,7 +62,8 @@ video {
 
 h2 {
   font-family: "Playfair Display", serif;
-  font-size: 3rem;
+  font-size: 3.8rem;
+  font-weight: 100;
   text-align: center;
 }
 
@@ -104,21 +113,20 @@ main {
 
 .project-card > img {
   height: 350px;
-  width: 600px;
+  width: 100%;
   object-fit: cover;
 }
 
 .project-details {
- margin: 1rem 2rem 6rem;
- display: flex;
- flex-direction: column;
- gap: 2rem;
+  margin: 1rem 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 h3 {
   font-family: "Playfair Display", serif;
   font-size: 1.8rem;
-  margin-left: 1rem;
 }
 
 .project-links {
@@ -127,6 +135,9 @@ h3 {
   align-items: center;
 }
 
+.project-links h3 {
+  margin-left: 1rem;
+}
 .project-icons {
   display: flex;
   gap: 1rem;
@@ -134,4 +145,33 @@ h3 {
 
 .project-icons img {
   width: 2rem;
+}
+
+/* FOOTER */
+
+footer > img {
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+  height: 650px;
+}
+
+.contact-info-container {
+  background-color: papayawhip;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  padding-bottom: 8rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+h2 + p {
+  font-size: 1.8rem;
+}
+
+.phone-email a {
+  text-decoration: none;
+  color: #565656;
 }
