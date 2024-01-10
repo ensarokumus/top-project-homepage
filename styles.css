@@ -54,6 +54,10 @@ video {
   text-align: center;
 }
 
+.header-image img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .about-me {
   margin: 3.5rem 1.5rem;
   display: flex;
@@ -138,6 +142,7 @@ h3 {
 .project-links h3 {
   margin-left: 1rem;
 }
+
 .project-icons {
   display: flex;
   gap: 1rem;
@@ -183,16 +188,51 @@ h2 + p {
 
 /* Tablet view */
 
-@media (min-width: 750px) {
+@media (min-width: 600px) {
+  /* HEADER */
+
+  .header-image {
+    width: 250px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .header-image h1 {
+    top: 1rem;
+    right: -40rem;
+    font-size: 4rem;
+  }
+
+  .about-me {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem;
+    padding-left: 15rem;
+    text-align: center;
+    margin: 6rem;
+    position: relative;
+    top: 2rem;
+  }
+
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.8rem;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .about-me p {
+    font-size: 1.3rem;
+  }
+
   /* FOOTER */
   footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  
+
   footer > img {
     padding: 3rem;
   }
-
 }
