@@ -36,6 +36,7 @@ video {
   height: 600px;
   background-color: rgb(253, 211, 144);
   clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+  z-index: -10;
 }
 
 .header-image {
@@ -149,6 +150,10 @@ h3 {
 
 /* FOOTER */
 
+footer {
+  background-color: papayawhip;
+}
+
 footer > img {
   object-fit: cover;
   object-position: bottom;
@@ -157,7 +162,6 @@ footer > img {
 }
 
 .contact-info-container {
-  background-color: papayawhip;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -174,4 +178,22 @@ h2 + p {
 .phone-email a {
   text-decoration: none;
   color: #565656;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet view */
+
+@media (min-width: 750px) {
+  /* FOOTER */
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  footer > img {
+    padding: 3rem;
+  }
+
 }
